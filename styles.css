@@ -1,0 +1,371 @@
+body{
+	background-color:#233f64;
+	}
+h1{
+	display:block;
+	color:grey;
+	text-align:center;
+	margin-top:2rem;
+	}
+.container{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-top:10rem;
+	}
+.snowglobe-container{
+	position:relative;
+}
+.snowglobe{
+	background-color:lightblue;
+	height:25rem;
+	width:25rem;
+	border-radius:50%;
+	border: 5px solid white;
+	position:relative;
+	top:0;
+	left:0;
+	overflow:hidden;
+	box-shadow: 2px 2px 22px white, 2px 2px 22px white inset;
+	}
+.snowglobe:before{
+	background-color:white;
+	opacity:0.2;
+	height:100%;
+	width:100%; 
+	content:'';
+	position:absolute;
+	}
+.snowman{
+	position:relative;
+	top:80%;
+	left:20%;
+}
+.snowman-head{
+	background-color:white;
+	height:3rem;
+	width:3rem;
+	border-radius:50%;
+	position:absolute;
+	bottom:9rem;
+	left:1rem;
+}
+.snowman-hat{
+	background-color:black;
+	width:2rem;
+	height:2rem;
+	position:absolute;
+	bottom:2.8rem;
+	left:0;
+	right:0;
+	margin:auto;
+	border:3px solid black;
+	border-top:0;
+	border-radius:10rem 10rem 0 0;
+	display:flex;
+	justify-content:center;
+}
+.snowman-hat:after{
+	content:'';
+	background-color:black;
+	width:2.8rem;
+	height:.5rem;
+	position:absolute;
+	bottom:-.5rem;
+}
+.snowman-eyes-left, .snowman-eyes-right{
+	background-color:black;
+	height:.5rem;
+	width:.5rem;
+	border-radius:50%;
+	position:absolute;
+	top:1rem;
+}
+.snowman-eyes-left{
+	left:.8rem;
+}
+.snowman-eyes-right{
+	right:.8rem;
+}
+.snowman-nose{
+	width:0;
+	position:absolute;
+	top:1.5rem;
+	left:1rem;
+	right:0;
+	margin:auto;
+	border-left: 1rem solid orange;
+	border-right: .25rem solid transparent;
+	border-bottom: .25rem solid transparent;
+	border-top: .25rem solid transparent;
+}
+.snowman-mouth{
+	width:1rem;
+	height:.4rem;
+	position:absolute;
+	top:2rem;
+	left:0;
+	right:0;
+	margin:auto;
+	border:3px solid black;
+	border-top:0;
+	border-radius: 0 0 10rem 10rem;
+}
+.snowman-middle{
+	background-color:white;
+	height:4rem;
+	width:4rem;
+	border-radius:50%;
+	position:absolute;
+	bottom:5rem;
+	left:.5rem;
+}
+.snowman-button1, .snowman-button2{
+	background-color:black;
+	height:.5rem;
+	width:.5rem;
+	border-radius:50%;
+	position:absolute;
+	top:1rem;
+	left:0;
+	right:0;
+	margin:auto;
+}
+.snowman-button1{
+	top:1.5rem;
+}
+.snowman-button2{
+	top:2.8rem;
+}
+.snowman-arm-left, .snowman-arm-right{
+	background-color:white;
+	height:1.2rem;
+	width:1.2rem;
+	border-radius:50%;
+	position:absolute;
+	top:30%;
+}
+.snowman-arm-left{
+	left:-1rem;
+}
+.snowman-arm-right{
+	right:-1rem;
+}
+.snowman-bottom{
+	background-color:white;
+	height:5rem;
+	width:5rem;
+	border-radius:50%;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+.tree{
+	border-left: 3rem solid transparent;
+	border-right: 3rem solid transparent;
+	border-bottom: 10rem solid #54a257;
+	border-top: 3rem solid transparent;
+	display:inline-block;
+	position:relative;
+	bottom:-28%;
+	left:50%;
+}
+.ornament1{
+	position:absolute;
+	top:3rem;
+	left:0rem;
+	background-color:purple;
+	border-radius:50%;
+	width:1rem;
+	height:1rem;
+	}
+.ornament2{
+	position:absolute;
+	top:5rem;
+	left:.5rem;
+	background-color:pink;
+	border-radius:50%;
+	width:1rem;
+	height:1rem;
+	}
+.ornament3{
+	position:absolute;
+	top:7rem;
+	left:.4rem;
+	background-color:coral;
+	border-radius:50%;
+	width:1rem;
+	height:1rem;
+	}
+.ornament4{
+	position:absolute;
+	top:8.5rem;
+	left:-2rem;
+	background-color:lightblue;
+	border-radius:50%;
+	width:1rem;
+	height:1rem;
+	}
+.ornament5{
+	position:absolute;
+	top:6rem;
+	left:-1.8rem;
+	background-color:lightyellow;
+	border-radius:50%;
+	width:1rem;
+	height:1rem;
+	}
+.sm-tree{
+	border-left: 1rem solid transparent;
+	border-right: 1rem solid transparent;
+	border-bottom: 4rem solid #54a257;
+	border-top: 1rem solid transparent;
+	display:inline-block;
+	position:relative;
+	bottom:-28%;
+	left:50%;
+	}
+.tree-top{
+	border-left: .5rem solid transparent;
+	border-right: .5rem solid transparent;
+	border-bottom: 2rem solid white;
+	border-top: .5rem solid transparent;
+	display:inline-block;
+	position:absolute;
+	top:-.5rem;
+	left:-.5rem;
+}
+.snowground{
+	background-color:white;
+	position:absolute;
+	bottom:4rem;
+	width:100%;
+	height:1rem;
+}
+.snowglobe-bottom{
+	position:absolute;
+	bottom:-.8rem;
+	left:0;
+	right:0;
+	margin:auto;
+	background:palegoldenrod;
+	height:4.8rem;
+	width:19rem;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+	border: 5px solid white;
+}
+.snowing{
+	position:absolute;
+	top:20%;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+	height:100%;
+	width:100%;
+	border-radius:50%;
+	background:url("snowFlakes.png"), url("snow4.png");
+	background-size:cover;
+	background-position: center;
+	animation: snowFlakes 10s linear infinite;
+	overflow:hidden;	
+	transition:ease 10s;
+	}
+@keyframes snowFlakes{
+	0%{
+		background-position: 0 0;
+		
+		}
+	100%{
+		background-position: 0rem 20rem;
+	
+		}
+	}
+/**** nighttime  **/
+.goodnight-btn{
+	font-size:1rem;
+	color:lightblue;
+	background-color:#151e54;
+	box-shadow:2px 2px 22px lightblue;
+	border:none;
+	border-radius:1rem;
+	padding:1.5rem 2.8rem;
+	margin:auto;
+	display:flex;
+	cursor:pointer;
+}
+.goodnight-snowglobe{
+	background-color:darkblue;
+	
+}
+.showStars{	
+	height:1rem;
+	width:1rem;
+	position:absolute;
+	
+}
+.showStars>.stars1{
+	position:absolute;
+	top:2rem;
+	left:10rem;
+}
+.showStars>.stars2{
+	position:absolute;
+	top:2rem;
+	left:15rem;
+}
+.showStars>.stars3{
+	position:absolute;
+	top:7rem;
+	left:18rem;
+}
+.showStars>.stars4{
+	position:absolute;
+	top:9rem;
+	left:19rem;
+}
+.showStars>.stars5{
+	position:absolute;
+	top:5rem;
+	left:13rem;
+}
+.showStars>.stars6{
+	position:absolute;
+	top:7rem;
+	left:5rem;
+}
+.showStars>.stars7{
+	position:absolute;
+	top:8rem;
+	left:14rem;
+}
+
+.star-top{
+	position:absolute;
+	width:1rem;
+	height:3px;
+	background-color:lightyellow;
+	transform:rotate(90deg);
+}
+.star-left{
+	position:absolute;
+	width:1rem;
+	height:3px;
+	background-color:lightyellow;
+	transform:rotate(-220deg);
+}
+.star-right{
+	position:absolute;
+	width:1rem;
+	height:3px;
+	background-color:lightyellow;
+	transform:rotate(220deg);
+}
+.star-middle{
+	position:absolute;
+	width:1rem;
+	height:3px;
+	background-color:lightyellow;
+	
+}
